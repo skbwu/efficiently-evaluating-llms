@@ -20,7 +20,8 @@ This repository accompanies the paper "Efficiently Evaluating LLM Performance wi
 4. FAQ hyperparameters were tuned on historical data in `faq_val.py` (and analyzed in `faq_val_analyzer.py`), and tested on simulated new models in `faq_final.py`. The specific coverage audits data was generated in `faq_coverage_analysis.py`.
 5. All baselines were run in `baselines_all.py` and all traditional active inference ablations were run in `active_inference_factor_ablation.py`.
 6. Compilation of the strongest baseline performances (post-hoc) and summarizing of FAQ and uniform sampling results were performed in `cleaning_results.py`.
-7. All main text figures can be generated in `Main Text Figures.ipynb` and all appendix figures can be generated in `Appendix Figures.ipynb`.
+7. Ablations for FAQ with/without replacement (Appendix B) are run via `without_replacement_ablation.py`.
+8. All main text figures can be generated in `Main Text Figures.ipynb` and all appendix figures can be generated in `Appendix Figures B.ipynb` and `Appendix Figures D.ipynb`.
 
 **Note that some scripts described above may include command-line arguments that group the list of seed and parameter combinations into smaller sublists (i.e., embarassingly-parallel computation). Each of the above code files also include extensive comments for user understanding and clarification.*
 
