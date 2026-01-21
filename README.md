@@ -1,4 +1,4 @@
-# Efficiently Evaluating LLM Performance with Statistical Guarantees
+# Efficient Evaluation of LLM Performance with Statistical Guarantees
 This repository accompanies the paper "Efficiently Evaluating LLM Performance with Statistical Guarantees" submitted to ICML 2026.
 
 **A note on data:** the scraped historical data $M_1$ (denoted as $H$ in the paper) and simulated new models $M_2$ can be found in the `data/processed` folder. This folder contains `mmlu-pro.zip` and `bbh+gpqa+ifeval+math+musr.zip`, containing our two aggregated benchmark suites under varying historical data-missingness levels. Please unzip these two compressed files before running our source code. The descriptor `nfobs` refers to the number of fully-observed rows (with `nfobs=None` referring to all rows fully-observed), while `p` refers to the MCAR elementwise probability of observing the remaining entries. We hope future researchers will benefit from these compiled finite-bank datasets for their own exciting ideas!
