@@ -1,5 +1,5 @@
 # Efficient Evaluation of LLM Performance with Statistical Guarantees
-This repository accompanies the paper "Efficiently Evaluating LLM Performance with Statistical Guarantees."
+This repository accompanies the paper "[Efficiently Evaluating LLM Performance with Statistical Guarantees.](https://arxiv.org/abs/2601.20251)"
 
 **A note on data:** the scraped historical data $M_1$ (denoted as $H$ in the paper) and simulated new models $M_2$ can be found in the `data/processed` folder. This folder contains `mmlu-pro.zip` and `bbh+gpqa+ifeval+math+musr.zip`, containing our two aggregated benchmark suites under varying historical data-missingness levels. Please unzip these two compressed files before running our source code. The descriptor `nfobs` refers to the number of fully-observed rows (with `nfobs=None` referring to all rows fully-observed), while `p` refers to the MCAR elementwise probability of observing the remaining entries. We hope future researchers will benefit from these compiled finite-bank datasets for their own exciting ideas!
 
@@ -30,6 +30,7 @@ This repository accompanies the paper "Efficiently Evaluating LLM Performance wi
 4. All baselines were run via `6. All Baselines for GPQA (All).ipynb` with post-hoc selection and summaries of all methods performed in `7. Analyzing Cold-Start FAQ vs. Baselines on GPQA (All).ipynb`.
 5. Main text and appendix figures for cold-start FAQ were generated using `8. Visualizing Results.ipynb`.
 
-**We also include `additional_exploratory_experiments.zip`, which includes code for reproducing our additional exploratory robustness experiments in Appendix F.*
 **Note that some scripts described above may include command-line arguments that group the list of seed and parameter combinations into smaller sublists (i.e., embarassingly-parallel computation). Each of the above code files also include extensive comments for user understanding and clarification.*
+
+**We also include `additional_exploratory_experiments.zip`, which includes code for reproducing our additional exploratory robustness experiments in Appendix F.*
 
